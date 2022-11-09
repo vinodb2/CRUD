@@ -1,0 +1,77 @@
+{
+  "employeeList": [
+    {
+      "Id": "23505",
+      "name": "Nancy",
+      "lastname": "Mancy",
+      "email": "nancymancy@gmail.com",
+      "mobilenumber": "9063286108",
+      "city": "mandasa",
+      "id": 5
+    },
+    {
+      "Id": "23505",
+      "name": "kumar",
+      "lastname": "sagar",
+      "email": "vinodh9063@gmai.com",
+      "mobilenumber": "9063286108",
+      "city": "mandasa",
+      "id": 7
+    },
+    {
+      "Id": "23505",
+      "name": "nitikesh",
+      "lastname": "jalan",
+      "email": "vinodh9063@gmai.com",
+      "mobilenumber": "9063286105",
+      "city": "fbsdn",
+      "id": 8
+    },
+    {
+      "Id": "23505",
+      "name": "viniger",
+      "lastname": "shah",
+      "email": "viigar.shah@gmai.com",
+      "mobilenumber": "9063286108",
+      "city": "mandasa",
+      "id": 9
+    },
+    {
+      "Id": "4565",
+      "name": "syam",
+      "lastname": "singh",
+      "email": "syamroy@gmail.com",
+      "mobilenumber": "9056478910",
+      "city": "vishakapatnam",
+      "id": 10
+    },
+    {
+      "Id": "1234",
+      "name": "Nancy",
+      "lastname": "Mancy",
+      "email": "vinodh9063@gmai.com",
+      "mobilenumber": "9063286108",
+      "city": "mandasa",
+      "id": 14
+    },
+    {
+      "Id": "1091",
+      "name": "surya",
+      "lastname": "kumar",
+      "email": "surya@gmail.com",
+      "mobilenumber": "9063286108",
+      "city": "Mumbai",
+      "id": 15
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

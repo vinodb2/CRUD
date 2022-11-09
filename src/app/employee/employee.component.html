@@ -1,0 +1,66 @@
+<mat-toolbar color="primary">
+ 
+    <span>CRUD</span>
+    <span class="example-spacer"></span>
+    <button mat-raised-button color="warn" (click)="openDialog()">Add employee</button>
+</mat-toolbar>
+
+
+<!--------------------------------------container start--------------------------------------------------------->
+<div class="container">
+  <div style="margin-top: 10px;">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+     
+      <!-- id Column -->
+      <ng-container matColumnDef="Id">
+        <th mat-header-cell *matHeaderCellDef> ID </th>
+        <td mat-cell *matCellDef="let row"> {{row.Id}} </td>
+      </ng-container>
+
+      <!-- Name Column -->
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name </th>
+        <td mat-cell *matCellDef="let row"> {{row.name}} </td>
+      </ng-container>
+      <!-- Lastname Column -->
+      <ng-container matColumnDef="lastname">
+        <th mat-header-cell *matHeaderCellDef> Lastname </th>
+        <td mat-cell *matCellDef="let row"> {{row.lastname}} </td>
+      </ng-container>
+      <!-- email Column -->
+      <ng-container matColumnDef="email">
+        <th mat-header-cell *matHeaderCellDef> Email </th>
+        <td mat-cell *matCellDef="let row"> {{row.email}} </td>
+      </ng-container>
+
+      <!-- mobile Column -->
+      <ng-container matColumnDef="mobilenumber">
+        <th mat-header-cell *matHeaderCellDef> Mobilenumber </th>
+        <td mat-cell *matCellDef="let row"> {{row.mobilenumber}} </td>
+      </ng-container>
+
+      <!-- city Column -->
+      <ng-container matColumnDef="city">
+        <th mat-header-cell *matHeaderCellDef> City </th>
+        <td mat-cell *matCellDef="let row"> {{row.city}} </td>
+      </ng-container>
+        <!-- actions -->
+
+      <!-- Action Column-->
+      <ng-container matColumnDef="action">
+        <th mat-header-cell *matHeaderCellDef> Action </th>
+        <td mat-cell *matCellDef="let row">
+          <button mat-raised-button (click)="editEmployee(row)" color="primary">Edit</button>
+          <button class="delete" mat-raised-button (click)="deleteEmployee(row.id)" color="accent">Delete</button>
+
+        </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+ 
+  </table>
+
+
+  </div>
+</div>
+    
